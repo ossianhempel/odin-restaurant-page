@@ -1,1 +1,6 @@
-console.log('WORKS');
+import { pageLoad } from '../PageLoadModule';
+
+
+
+
+pageLoad();
