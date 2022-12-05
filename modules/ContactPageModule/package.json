@@ -1,8 +1,8 @@
 {
-  "name": "page_load_module",
+  "name": "contactpagemodule",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "contactPage.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

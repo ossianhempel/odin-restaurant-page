@@ -1,5 +1,35 @@
+
+
 exports.homePageLoad = function() {
   const content = document.querySelector('#content');
+
+  const navBar = document.createElement('nav');
+  const homeBtn = document.createElement('button');
+  const menuBtn = document.createElement('button');
+  const contactBtn = document.createElement('button');
+
+  content.appendChild(navBar);
+  
+  homeBtn.textContent = 'Home';
+  menuBtn.textContent = 'Menu';
+  contactBtn.textContent = 'Contact';
+
+  navBar.appendChild(homeBtn);
+  navBar.appendChild(menuBtn);
+  navBar.appendChild(contactBtn);
+
+  // const navButtons = document.querySelectorAll('button');
+  // navButtons.forEach(button => button.addEventListener('click', function(e) {
+  //   if (e.target.textContent = 'Home') {
+  //     homePageLoad();
+  //   } else if (e.target.textContent = 'Menu') {
+  //     menuPageLoad();
+  //   } else if (e.target.textContent = 'Contact') {
+  //     contactPageLoad();
+  //   }
+  // }))
+
+
 
   const header = document.createElement('header');
   header.textContent = "Ossian's Delicious Swedish Meals!";
@@ -20,6 +50,7 @@ exports.homePageLoad = function() {
   location.classList.add('location-container');
   location.textContent = "Mejselvägen 37. 126 38 Hägersten";
 
+  // content.appendChild(navBar);
   content.appendChild(header);
   content.appendChild(img);
   content.appendChild(copy);
